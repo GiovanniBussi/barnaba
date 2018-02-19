@@ -29,6 +29,11 @@ setup(name='barnaba',
       packages=find_packages(),
       python_requires='>=2.6, !=3.0.*, !=3.1.*, !=3.2.*',
       install_requires=['numpy','scipy','mdtraj','future'],
+      entry_points={
+          'console_scripts': [
+              'baRNAba=barnaba.__main__:main',
+          ],
+      },
       test_suite='nose.collector',
       zip_safe=False)
 
