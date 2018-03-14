@@ -5,12 +5,8 @@ python:
   - "3.6"
 cache: pip
 install:
-  - pip install numpy scipy cython
-  - pip install pandas
-  - pip install sklearn
-  - pip install mdtraj
-  - pip install nose
   - pip install -e .
+  - pip install nose
 
 script:
   # Your test script goes here

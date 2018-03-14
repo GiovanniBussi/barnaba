@@ -28,7 +28,8 @@ setup(name='barnaba',
       setup_requires = ['setuptools_scm'],
       packages=find_packages(),
       python_requires='>=2.6',
-      install_requires=['numpy','scipy','mdtraj','future'],
+# cython and pandas are required for mdtraj to work
+      install_requires=['numpy','scipy','cython','pandas','mdtraj','sklearn','future'],
       test_suite='nose.collector',
       scripts=['bin/barnaba'],
       zip_safe=False)
