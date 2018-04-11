@@ -14,4 +14,8 @@ install:
 
 script:
   # Your test script goes here
-  - nosetests -v
+  - nosetests --with-coverage -v
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
